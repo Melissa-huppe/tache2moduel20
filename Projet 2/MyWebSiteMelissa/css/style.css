@@ -1,0 +1,63 @@
+
+  body{
+    background:pink;
+
+  }
+
+  .buffy{
+    color:blue;
+    font-size:36px;
+  }
+h1{
+  color: purple;
+  font-size: 36px;
+}
+
+hr{
+  border-color:grey;
+  border-top-style: dotted;
+  border-width: 5px;
+  height: 0px;
+  width: 100%
+}
+.moi{
+  width: 20px;
+  height: 20px;
+}
+.droit{
+  width: 20px;
+  height: 20px;
+}
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
